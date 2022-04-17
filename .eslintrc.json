@@ -1,3 +1,12 @@
 {
-  "extends": ["next/core-web-vitals", "next/babel"]
+  "env": { "browser": true, "es6": true, "node": true },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "next",
+    "next/core-web-vitals",
+    "next/babel",
+    "plugin:prettier/recommended" // always at the end
+  ]
 }
